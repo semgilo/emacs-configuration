@@ -1,0 +1,53 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/" . "CH/")
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/" . "src/")
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/" . "Bin/")
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/" . "trunk/")
+ ("/Users/semgilo/Documents/SVN/Sanguo/" . "Code/")
+ ("/Users/semgilo/Documents/SVN/" . "Sanguo/")
+ ("/Users/semgilo/Documents/" . "SVN/")
+ ("/Users/semgilo/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/semgilo/.emacs.d/lisp/"
+ "/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/CH/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init-lua.el"
+ "all.lua"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/semgilo/.emacs.d/lisp/" (22790 59674 0 0) "init-utils.el" "init-style.el" "init-site-lisp.el" "init-lua.el" "init-hexo-blog.el" "init-exec-path.el" "init-elpa.el" "init-compat.el" "init-benchmarking.el" "init-base-gui.el" "../" "./")
+
+ ("/Users/semgilo/.emacs.d/" (22790 59974 0 0) "site-lisp/" "recentf" "lisp/" "init.el" "ido.last" "elpa-25.1/" "custom.el" "auto-save-list/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/CH/" (22786 60573 0 0) "ch_worldBoss.lua" "ch_wish.lua" "ch_VIPPrivilege.lua" "ch_vip.lua" "ch_treasureFragment.lua" "ch_sound.lua" "ch_society.lua" "ch_skill.lua" "ch_signin.lua" "ch_shop.lua" "ch_serverList.lua" "ch_sail.lua" "ch_recruit.lua" "ch_recharge.lua" "ch_raffle.lua" "ch_pvpRankReward.lua" "ch_price.lua" "ch_player.lua" "ch_ore.lua" "ch_noticeTips.lua" "ch_notice.lua" "ch_messageTips.lua" "ch_map.lua" "ch_mail.lua" "ch_item.lua" "ch_hot.lua" "ch_hero.lua" "ch_guide.lua" "ch_gm.lua" "ch_formula.lua" "ch_fateSoul.lua" "ch_faction.lua" "ch_exp.lua" "ch_equipment.lua" "ch_common.lua" "ch_collectionReward.lua" "ch_chat.lua" "ch_cdkey.lua" "ch_bossCome.lua" "ch_battle.lua" "ch_banText.lua" "ch_arenaNpc.lua" "ch_arenaAward.lua" "ch_activity.lua" "all.lua" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/" (22017 33473 0 0) "tools/" "server/" "robot/" "libs/" "common/" "client/" "CH/" ".DS_Store" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/" (22786 60592 0 0) "转化data成lua文件.bat" "解密data.bat" "生成资源字典.bat" "打包散图.bat" "同步资源-IOS.sh" "同步版本到game目录.bat" "同步动作资源.sh" "同步其它资源.bat" "同步UI资源.bat" "同步Spine资源.bat" "同步Sound资源.bat" "同步Data资源.bat" "加密lua.bat" "加密data.bat" "zlib1.dll" "websockets.dll" "vcruntime140d.dll" "vcruntime140.dll" "utf82gbk.bat" "update_remote_sql.sql" "update_game_sql.sql" "ucrtbased.dll" "sysntfy.dll" "src/" "sqlite3.dll" "socket.dll" "settings.ini" "SanGuoClient.exe" "robotTimerKill.bat" "robotTimer.bat" "robot.bat" "RestartOnCrash.exe" "res.ini" "res/" "remoteserver.sql" "png2jpg_mask.bat" "OpenAL32.dll" "msvcr120.dll" "msvcr110d.dll" "msvcr110.dll" "msvcr100d.dll" "msvcr100.dll" "msvcp140d.dll" "msvcp140.dll" "msvcp110d.dll" "msvcp110.dll" "msvcp100d.dll" "msvcp100.dll" "luaoc.lua" "luajit.exe" "luaj.lua" "lua51.dll" "lua5.1.dll" "LogicServer.pdb" "LogicServer.exe" "Log/" "libvorbisfile.dll" "libvorbis.dll" "libtiff.dll" "libtcmalloc_minimal.dll" "libogg.dll" "libmysql.dll" "libmpg123.dll" "libcurl.dll" "libcocos2d.dll" "lang" "json.lua" "jit/" "IEShims.dll" "iconv.dll" "gpsvc.dll" "glew32.dll" "gbk2utf8.bat" "game.sql" "cygwin1.dll" "cyglua51.dll" "config.json" "concrt140d.dll" "concrt140.dll" "Client_robot.exe" "Client.exe" "api-ms-win-core-timezone-l1-1-0.dll" "api-ms-win-core-synch-l1-2-0.dll" "api-ms-win-core-processthreads-l1-1-1.dll" "api-ms-win-core-localization-l1-2-0.dll" "api-ms-win-core-file-l2-1-0.dll" "api-ms-win-core-file-l1-2-0.dll" ".DS_Store" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/" (22767 17249 0 0) "Spine0430备份/" "Spine/" "SanGuoClient/" "Particle/" "icon/" "httpServer/" "Communal/" "CocosProject/" "Client/" "Bin/" ".DS_Store" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/" (21973 22140 0 0) "trunk/" ".DS_Store" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/" (22189 52431 0 0) "versions/" "Code/" ".svn/" ".DS_Store" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/" (21973 22140 0 0) "wafs/" "Sanguo/" ".DS_Store" "../" "./")
+
+ ("/Users/semgilo/Documents/" (22751 42572 0 0) "魔兽真三国 新ICON.zip" "魔兽真三国 新ICON/" "宝贝的祝福.mov" "准备博文列表 .rtf" "workspace1/" "Work/" "WechatIMG2.jpeg" "Thumbs.db" "test.org~" "test.html" "SVN/" "shot2.lua" "shot1.lua" "RDC Connections/" "proj.android.zip" "pic.jpg" "package-ios.zip" "package-android.zip" "org/" "Library/" "Github/" "get-dip.scptd/" "effect.csv" "Dev/" "desktop.ini" "Cocostudio/" "Client-mobile 2017-02-21 23-20-39/" "Client-mobile 2017-02-18 22-21-54/" "cards.png" "cards.plist" "BattleSystem.mnd" "AnySDK Files/" "AnySDK/" "77c6a7efce1b9d166ef35719f0deb48f8c546496.jpg" ".yardopts" ".parallels-vm-directory/" ".localized" ".gitignore" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/semgilo/" (22786 5253 0 0) "versionyy_5.txt" "version.txt" "uninstall_node.sh" "Public/" "Pictures/" "node_modules/" "Music/" "Movies/" "luajit-2.1.0-beta2/" "Library/" "Downloads/" "Documents/" "Desktop/" "connections.xml" "bak/" "Applications (Parallels)/" "Applications/" ".wget-hsts" ".viminfo" ".vim/" ".Trash-1000/" ".Trash/" ".subversion/" ".ssh/" ".QUICK_V3_ROOT" ".quick_player.lua" ".python-eggs/" ".putty/" ".profile.backup" ".profile" ".org-timestamps/" ".nvm/" ".npm/" ".node_repl_history" ".node-gyp/" ".mask.png" ".macports/" ".lldb/" ".jpg" ".itmstransporter/" ".gradle/" ".gitconfig" ".emacs.d/" ".DS_Store" ".config/" ".codeintel/" ".cocos/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile.swp" ".bash_profile.swo" ".bash_profile.macports-saved_2015-03-24_at_22:16:13" ".bash_profile.backup4" ".bash_profile.backup3" ".bash_profile.backup2" ".bash_profile.backup1" ".bash_profile.backup" ".bash_profile-2015-04-04-110117.bak" ".bash_profile" ".bash_history" ".appcfg_nag" ".android/" "#*message*-20170324-010150#" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

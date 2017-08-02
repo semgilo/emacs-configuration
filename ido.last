@@ -2,35 +2,61 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/" . "semgilo/")
+ ("/Users/semgilo/Documents/Github/gtd/" . "work/")
+ ("/Users/semgilo/Documents/Github/" . "gtd/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/" . "CH/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/" . "src/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/" . "Bin/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/" . "trunk/")
  ("/Users/semgilo/Documents/SVN/Sanguo/" . "Code/")
  ("/Users/semgilo/Documents/SVN/" . "Sanguo/")
- ("/Users/semgilo/Documents/" . "SVN/")
+ ("/Users/semgilo/Documents/" . "Github/")
  ("/Users/semgilo/" . "Documents/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/Users/semgilo/.emacs.d/lisp/"
+ "/Users/semgilo/Documents/Github/gtd/"
+ "/Users/semgilo/Documents/"
+ "/Users/semgilo/Documents/Github/gtd/work/"
  "/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/CH/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "init-lua.el"
- "all.lua"
+ "init-style.el"
+ "2017学习计划.org"
+ "test.org"
+ "init-base-gui.el"
+ "init-hexo-blog.el"
+ "init-utils.el"
+ "2017-5-23.org"
+ "2017-5-9.org"
+ "2017-5-6.org"
+ "2017-5-3.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/semgilo/.emacs.d/lisp/" (22790 59674 0 0) "init-utils.el" "init-style.el" "init-site-lisp.el" "init-lua.el" "init-hexo-blog.el" "init-exec-path.el" "init-elpa.el" "init-compat.el" "init-benchmarking.el" "init-base-gui.el" "../" "./")
+ ("/Users/semgilo/.emacs.d/lisp/" (22842 55566 0 0) "test2.png" "init-utils.el" "init-style.el" "init-site-lisp.el" "init-lua.el" "init-hexo-blog.el" "init-exec-path.el" "init-elpa.el" "init-compat.el" "init-benchmarking.el" "init-base-gui.el" "../" "./")
 
- ("/Users/semgilo/.emacs.d/" (22790 59974 0 0) "site-lisp/" "recentf" "lisp/" "init.el" "ido.last" "elpa-25.1/" "custom.el" "auto-save-list/" ".gitignore" ".git/" "../" "./")
+ ("/Users/semgilo/Documents/Github/gtd/" (22842 50793 0 0) "work/" "2017学习计划.org" ".gitignore" ".git/" ".DS_Store" "../" "./")
 
- ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/CH/" (22786 60573 0 0) "ch_worldBoss.lua" "ch_wish.lua" "ch_VIPPrivilege.lua" "ch_vip.lua" "ch_treasureFragment.lua" "ch_sound.lua" "ch_society.lua" "ch_skill.lua" "ch_signin.lua" "ch_shop.lua" "ch_serverList.lua" "ch_sail.lua" "ch_recruit.lua" "ch_recharge.lua" "ch_raffle.lua" "ch_pvpRankReward.lua" "ch_price.lua" "ch_player.lua" "ch_ore.lua" "ch_noticeTips.lua" "ch_notice.lua" "ch_messageTips.lua" "ch_map.lua" "ch_mail.lua" "ch_item.lua" "ch_hot.lua" "ch_hero.lua" "ch_guide.lua" "ch_gm.lua" "ch_formula.lua" "ch_fateSoul.lua" "ch_faction.lua" "ch_exp.lua" "ch_equipment.lua" "ch_common.lua" "ch_collectionReward.lua" "ch_chat.lua" "ch_cdkey.lua" "ch_bossCome.lua" "ch_battle.lua" "ch_banText.lua" "ch_arenaNpc.lua" "ch_arenaAward.lua" "ch_activity.lua" "all.lua" "../" "./")
+ ("/Users/semgilo/Documents/" (22842 50122 0 0) "宝贝的祝福.mov" "准备博文列表 .rtf" "workspace1/" "Work/" "Thumbs.db" "test.org" "test.html" "SVN/" "RDC Connections/" "proj.android.zip" "pic.jpg" "package-ios.zip" "package-android.zip" "org/" "Library/" "Github/" "get-dip.scptd/" "Dev/" "desktop.ini" "Cocostudio/" "cards.png" "cards.plist" "BattleSystem.mnd" "AnySDK Files/" "AnySDK/" "77c6a7efce1b9d166ef35719f0deb48f8c546496.jpg" ".yardopts" ".parallels-vm-directory/" ".localized" ".gitignore" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/semgilo/Documents/Github/" (22830 25798 0 0) "www.lanhuzi.com/" "tools/" "some-mmorpg/" "smile/" "skynet/" "Simple OpenGL Image Library/" "NWPusher/" "monster_v3/" "monster-new/" "monster-code-old/" "monster-code/" "monster/" "MBProgressHUD/" "make_luajit" "luajit-2.1.0-beta2/" "lua-snapshot/" "libluajit21.a" "IAPHelper/" "gtd/" "glfw/" "glew/" "gitolite-admin/" "emacs.d/" "DotaKillX3/" "DLInAppPurchase/" "CrossApp/" "cocos2d-x/" "AntAnySDK/" "AMTest/" ".DS_Store" "../" "./")
+
+ ("/Users/" (22795 2758 0 0) "Shared/" "semgilo/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/semgilo/" (22842 5421 0 0) "versionyy_5.txt" "version.txt" "uninstall_node.sh" "Public/" "Pictures/" "node_modules/" "Music/" "Movies/" "luajit-2.1.0-beta2/" "Library/" "Downloads/" "Documents/" "Desktop/" "connections.xml" "bak/" "Applications (Parallels)/" "Applications/" ".wget-hsts" ".viminfo" ".vim/" ".Trash-1000/" ".Trash/" ".subversion/" ".ssh/" ".QUICK_V3_ROOT" ".quick_player.lua" ".python-eggs/" ".putty/" ".profile.backup" ".profile" ".org-timestamps/" ".nvm/" ".npm/" ".node_repl_history" ".node-gyp/" ".mask.png" ".macports/" ".lldb/" ".jpg" ".itmstransporter/" ".gradle/" ".gitconfig" ".emacs.d/" ".DS_Store" ".config/" ".codeintel/" ".cocos/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile.swp" ".bash_profile.swo" ".bash_profile.macports-saved_2015-03-24_at_22:16:13" ".bash_profile.backup4" ".bash_profile.backup3" ".bash_profile.backup2" ".bash_profile.backup1" ".bash_profile.backup" ".bash_profile-2015-04-04-110117.bak" ".bash_profile" ".bash_history" ".appcfg_nag" ".android/" "#*message*-20170324-010150#" "../" "./")
+
+ ("/Users/semgilo/Documents/Github/gtd/work/" (22824 13679 0 0) "2017-5-9.org" "2017-5-6.org" "2017-5-3.org" "2017-5-23.org" ".git" "../" "./")
+
+ ("/Users/semgilo/.emacs.d/" (22828 56289 0 0) "site-lisp/" "recentf" "lisp/" "init.el" "ido.last" "elpa-25.1/" "custom.el" "auto-save-list/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/CH/" (22794 62167 0 0) "ch_worldBoss.lua" "ch_wish.lua" "ch_VIPPrivilege.lua" "ch_vip.lua" "ch_treasureFragment.lua" "ch_sound.lua" "ch_society.lua" "ch_skill.lua" "ch_signin.lua" "ch_shop.lua" "ch_serverList.lua" "ch_sail.lua" "ch_recruit.lua" "ch_recharge.lua" "ch_raffle.lua" "ch_pvpRankReward.lua" "ch_price.lua" "ch_player.lua" "ch_ore.lua" "ch_noticeTips.lua" "ch_notice.lua" "ch_messageTips.lua" "ch_map.lua" "ch_mail.lua" "ch_item.lua" "ch_hot.lua" "ch_hero.lua" "ch_guide.lua" "ch_gm.lua" "ch_formula.lua" "ch_fateSoul.lua" "ch_faction.lua" "ch_exp.lua" "ch_equipment.lua" "ch_common.lua" "ch_collectionReward.lua" "ch_chat.lua" "ch_cdkey.lua" "ch_bossCome.lua" "ch_battle.lua" "ch_banText.lua" "ch_arenaNpc.lua" "ch_arenaAward.lua" "ch_activity.lua" "all.lua" "activity/" "../" "./")
 
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/" (22017 33473 0 0) "tools/" "server/" "robot/" "libs/" "common/" "client/" "CH/" ".DS_Store" "../" "./")
 
@@ -43,10 +69,6 @@
  ("/Users/semgilo/Documents/SVN/Sanguo/" (22189 52431 0 0) "versions/" "Code/" ".svn/" ".DS_Store" "../" "./")
 
  ("/Users/semgilo/Documents/SVN/" (21973 22140 0 0) "wafs/" "Sanguo/" ".DS_Store" "../" "./")
-
- ("/Users/semgilo/Documents/" (22751 42572 0 0) "魔兽真三国 新ICON.zip" "魔兽真三国 新ICON/" "宝贝的祝福.mov" "准备博文列表 .rtf" "workspace1/" "Work/" "WechatIMG2.jpeg" "Thumbs.db" "test.org~" "test.html" "SVN/" "shot2.lua" "shot1.lua" "RDC Connections/" "proj.android.zip" "pic.jpg" "package-ios.zip" "package-android.zip" "org/" "Library/" "Github/" "get-dip.scptd/" "effect.csv" "Dev/" "desktop.ini" "Cocostudio/" "Client-mobile 2017-02-21 23-20-39/" "Client-mobile 2017-02-18 22-21-54/" "cards.png" "cards.plist" "BattleSystem.mnd" "AnySDK Files/" "AnySDK/" "77c6a7efce1b9d166ef35719f0deb48f8c546496.jpg" ".yardopts" ".parallels-vm-directory/" ".localized" ".gitignore" ".DS_Store" "$RECYCLE.BIN/" "../" "./")
-
- ("/Users/semgilo/" (22786 5253 0 0) "versionyy_5.txt" "version.txt" "uninstall_node.sh" "Public/" "Pictures/" "node_modules/" "Music/" "Movies/" "luajit-2.1.0-beta2/" "Library/" "Downloads/" "Documents/" "Desktop/" "connections.xml" "bak/" "Applications (Parallels)/" "Applications/" ".wget-hsts" ".viminfo" ".vim/" ".Trash-1000/" ".Trash/" ".subversion/" ".ssh/" ".QUICK_V3_ROOT" ".quick_player.lua" ".python-eggs/" ".putty/" ".profile.backup" ".profile" ".org-timestamps/" ".nvm/" ".npm/" ".node_repl_history" ".node-gyp/" ".mask.png" ".macports/" ".lldb/" ".jpg" ".itmstransporter/" ".gradle/" ".gitconfig" ".emacs.d/" ".DS_Store" ".config/" ".codeintel/" ".cocos/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile.swp" ".bash_profile.swo" ".bash_profile.macports-saved_2015-03-24_at_22:16:13" ".bash_profile.backup4" ".bash_profile.backup3" ".bash_profile.backup2" ".bash_profile.backup1" ".bash_profile.backup" ".bash_profile-2015-04-04-110117.bak" ".bash_profile" ".bash_history" ".appcfg_nag" ".android/" "#*message*-20170324-010150#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

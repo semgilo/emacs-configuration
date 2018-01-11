@@ -32,15 +32,15 @@
 ;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
-
+(require 'init-yasnippet) ;; 
 ;;----------------------------------------------------------------------------
 ;; init style
 ;;----------------------------------------------------------------------------
 
-(require 'init-style) ;; Theme and GUI 
-
+(require 'init-style) ;; Theme and GUI
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
 (require 'init-hexo-blog) ;; Hexo blog
+(require 'init-graphviz-dot-mode) ;; Graphviz-dot-mode

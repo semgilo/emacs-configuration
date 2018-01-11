@@ -5,6 +5,7 @@
 ;; Redefine some default
 (setq-default cursor-type 'bar)
 (setq-default make-backup-files nil)
+(setq-default auto-save-default nil)
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 (setq inhibit-splash-screen t)
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
@@ -12,7 +13,8 @@
 
 ;; Disable some mijor modes
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+;;(scroll-bar-mode -1)
+(auto-save-mode -1)
 
 ;; Enable some mijor modes
 (linum-mode t)
@@ -33,6 +35,13 @@
 (require-package 'hungry-delete)
 (require 'hungry-delete)
 (global-hungry-delete-mode)
+
+(require-package 'multiple-cursors)
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (defun move-text-internal (arg)
   (cond

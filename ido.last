@@ -14,7 +14,7 @@
  ("/Users/semgilo/Documents/SVN/Sanguo/" . "Code/")
  ("/Users/semgilo/Documents/SVN/" . "Sanguo/")
  ("/Users/semgilo/Documents/" . "Github/")
- ("/Users/semgilo/" . "Documents/")
+ ("/Users/semgilo/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
@@ -43,7 +43,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/semgilo/.emacs.d/" (23097 58644 0 0) "snippets/" "site-lisp/" "recentf" "lisp/" "init.el" "ido.last" "elpa-25.1/" "custom.el" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
+ ("/Users/semgilo/.emacs.d/lisp/" (23127 20258 0 0) "test2.png" "init-yasnippet.el" "init-utils.el" "init-style.el" "init-site-lisp.el" "init-lua.el" "init-hexo-blog.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-elpa.el" "init-compat.el" "init-benchmarking.el" "init-base-gui.el" "../" "./")
+
+ ("/Users/semgilo/.emacs.d/" (23127 20354 0 0) "snippets/" "site-lisp/" "recentf" "lisp/" "init.el" "ido.last" "elpa-25.1/" "custom.el" "auto-save-list/" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
+
+ ("/Applications/Emacs.app/Contents/Resources/etc/" (22497 60798 0 0) "yow.lines" "WHY-FREE" "tutorials/" "TODO" "themes/" "THE-GNU-PROJECT" "TERMS" "srecode/" "spook.lines" "ses-example.ses" "schema/" "rgb.txt" "refcards/" "README" "publicsuffix.txt.gz" "ps-prin1.ps" "ps-prin0.ps" "PROBLEMS" "package-keyring.gpg" "ORG-NEWS" "org/" "ORDERS" "NXML-NEWS" "nxml/" "NEXTSTEP" "NEWS.24" "NEWS.23" "NEWS.22" "NEWS.21" "NEWS.20" "NEWS.19" "NEWS.18" "NEWS.1-17" "NEWS" "MORE.STUFF" "MH-E-NEWS" "MACHINES" "LINUX-GNU" "JOKES" "images/" "HISTORY" "HELLO" "grep.txt" "gnus-tut.txt" "GNUS-NEWS" "gnus/" "GNU" "future-bug" "FTP" "forms/" "ETAGS.README" "ETAGS.EBNF" "ERC-NEWS" "enriched.txt" "emacs.icon" "emacs.desktop" "emacs.appdata.xml" "emacs-buffer.gdb" "edt-user.el" "e/" "DOC" "DISTRIB" "DEVEL.HUMOR" "DEBUG" "COPYING" "compilation.txt" "charsets/" "CENSORSHIP" "CALC-NEWS" "AUTHORS" "../" "./")
 
  ("/Users/semgilo/" (23118 12727 0 0) "versionyy_5.txt" "version.txt" "uninstall_node.sh" "Public/" "Pictures/" "node_modules/" "Music/" "Movies/" "luajit-2.1.0-beta2/" "Library/" "Downloads/" "Documents/" "Desktop/" "connections.xml" "bak/" "Applications (Parallels)/" "Applications/" ".wget-hsts" ".viminfo" ".vim/" ".Trash-1000/" ".Trash/" ".subversion/" ".ssh/" ".QUICK_V3_ROOT" ".quick_player.lua" ".python-eggs/" ".putty/" ".profile.backup" ".profile" ".org-timestamps/" ".nvm/" ".npm/" ".node_repl_history" ".node-gyp/" ".mono/" ".mask.png" ".macports/" ".local/" ".lldb/" ".jpg" ".itmstransporter/" ".gradle/" ".gitconfig" ".emacs.d/" ".DS_Store" ".config/" ".codeintel/" ".cocos/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile.swp" ".bash_profile.swo" ".bash_profile.macports-saved_2015-03-24_at_22:16:13" ".bash_profile.backup4" ".bash_profile.backup3" ".bash_profile.backup2" ".bash_profile.backup1" ".bash_profile.backup" ".bash_profile-2015-04-04-110117.bak" ".bash_profile" ".bash_history" ".appcfg_nag" ".android/" "*scratch*" "#*message*-20170324-010150#" "../" "./")
 
@@ -60,8 +64,6 @@
  ("/Users/semgilo/Documents/Github/www.lanhuzi.com/source/" (22852 62639 0 0) "_posts/" ".DS_Store" "../" "./")
 
  ("/Users/semgilo/Documents/Github/www.lanhuzi.com/source/_posts/" (22927 42086 0 0) "org-mode.org~" "lua-utf8-string-length.org~" "lua-utf8-string-length.org" "lua-coroutine.org~" "lua-coroutine.org" "just-do.org~" "just-do.org" "iap-productid-take-effect-time.org" "cocos2dx-recreate-event.org~" "cocos2dx-recreate-event.org" "cocos2dx-fileutils-cache.org" "cocos2dx-etc1-crash.org" "cocos2dx-ant-config.org~" "cocos2dx-ant-config.org" "cocos2dx-android-threads.org" "cocos2dx-android-black-block.org" "android-sdk-service-stop-problem.org" "android-apk-download-cant-open.org" "20170610_130901.png" "20170610_130136.png" ".DS_Store" "#just-do.org#" "../" "./")
-
- ("/Users/semgilo/.emacs.d/lisp/" (22925 9761 0 0) "test2.png" "init-yasnippet.el" "init-utils.el" "init-style.el" "init-site-lisp.el" "init-lua.el" "init-hexo-blog.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-elpa.el" "init-compat.el" "init-benchmarking.el" "init-base-gui.el" "../" "./")
 
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/" (22879 43003 0 0) "转化data成lua文件.bat" "解密data.bat" "生成资源字典.bat" "打包散图.bat" "同步资源-IOS.sh" "同步版本到game目录.bat" "同步动作资源.sh" "同步其它资源.bat" "同步UI资源.bat" "同步Spine资源.bat" "同步Sound资源.bat" "同步Data资源.bat" "加密lua.bat" "加密data.bat" "zlib1.dll" "websockets.dll" "vcruntime140d.dll" "vcruntime140.dll" "utf82gbk.bat" "update_remote_sql.sql" "update_game_sql.sql" "ucrtbased.dll" "sysntfy.dll" "src/" "sqlite3.dll" "socket.dll" "settings.ini" "server_init.lua" "SanGuoClient.exe" "robotTimerKill.bat" "robotTimer.bat" "robot.bat" "RestartOnCrash.exe" "res.ini" "res/" "remoteserver.sql" "png2jpg_mask.bat" "OpenAL32.dll" "msvcr120.dll" "msvcr110d.dll" "msvcr110.dll" "msvcr100d.dll" "msvcr100.dll" "msvcp140d.dll" "msvcp140.dll" "msvcp110d.dll" "msvcp110.dll" "msvcp100d.dll" "msvcp100.dll" "luaoc.lua" "luajit.exe" "luaj.lua" "lua51.dll" "lua5.1.dll" "LogicServer.pdb" "LogicServer.exe" "Log/" "libvorbisfile.dll" "libvorbis.dll" "libtiff.dll" "libtcmalloc_minimal.dll" "libogg.dll" "libmysql.dll" "libmpg123.dll" "libcurl.dll" "libcocos2d.dll" "lang" "json.lua" "jit/" "IEShims.dll" "iconv.dll" "gpsvc.dll" "glew32.dll" "gbk2utf8.bat" "game.sql" "cygwin1.dll" "cyglua51.dll" "config.json" "concrt140d.dll" "concrt140.dll" "Client_robot.exe" "Client.exe" "api-ms-win-core-timezone-l1-1-0.dll" "api-ms-win-core-synch-l1-2-0.dll" "api-ms-win-core-processthreads-l1-1-1.dll" "api-ms-win-core-localization-l1-2-0.dll" "api-ms-win-core-file-l2-1-0.dll" "api-ms-win-core-file-l1-2-0.dll" ".DS_Store" "../" "./")
 

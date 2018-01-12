@@ -20,6 +20,9 @@
 (linum-mode t)
 (delete-selection-mode t)
 (global-hl-line-mode t)
+(global-linum-mode 1) ;; always show line nubers
+;; (setq linum-format "%d| ") ;set format
+
 
 ;;----------------------------------------------------------------------------
 ;;  Operation 

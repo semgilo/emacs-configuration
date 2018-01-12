@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	keyboard-escape-quit
 	))
 
 (setq mc/cmds-to-run-once
@@ -10,4 +11,5 @@
 	eval-print-last-sexp
 	hungry-delete-backward
 	ns-paste-secondary
+	upcase-region
 	))

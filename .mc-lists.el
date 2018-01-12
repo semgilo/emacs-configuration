@@ -10,6 +10,7 @@
       '(
 	eval-print-last-sexp
 	hungry-delete-backward
+	indent-new-comment-line
 	ns-paste-secondary
 	upcase-region
 	))

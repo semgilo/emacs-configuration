@@ -46,6 +46,10 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; ace-window
+(require-package 'ace-window)
+(global-set-key (kbd "M-p") 'ace-window)
+
 (defun move-text-internal (arg)
   (cond
    ((and mark-active transient-mark-mode)

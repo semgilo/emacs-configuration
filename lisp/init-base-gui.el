@@ -13,6 +13,7 @@
 ;;----------------------------------------------------------------------------
 (linum-mode t)
 
+
 ;;----------------------------------------------------------------------------
 ;; Suppress GUI features
 ;;----------------------------------------------------------------------------
@@ -20,6 +21,8 @@
 (setq use-dialog-box nil)
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-echo-area-message t)
+;; ace-window switch widow quikly 
+
 
 ;;----------------------------------------------------------------------------
 ;; Show a marker in the left fringe for lines not in the buffer

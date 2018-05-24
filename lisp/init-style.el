@@ -35,9 +35,9 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
-(require-package 'hungry-delete)
-(require 'hungry-delete)
-(global-hungry-delete-mode)
+;; (require-package 'hungry-delete)
+;; (require 'hungry-delete)
+;; (global-hungry-delete-mode)
 
 (require-package 'multiple-cursors)
 (require 'multiple-cursors)
@@ -49,6 +49,18 @@
 ;; ace-window
 (require-package 'ace-window)
 (global-set-key (kbd "M-p") 'ace-window)
+
+;; find-file-in-project
+(require-package 'find-file-in-project)
+;; (defun semgilo/open-lua-project (path)
+;;   (interactive "input path: ")
+
+;;   (if (file-exists-p (file-name-directory path))
+;;       ;; open a file and write something
+      
+  
+
+(global-set-key [C-s-268632065] 'semgilo/capture-screenshot)
 
 (defun move-text-internal (arg)
   (cond

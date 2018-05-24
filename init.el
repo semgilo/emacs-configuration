@@ -33,11 +33,13 @@
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 (require 'init-yasnippet) ;; 
+;;(require 'init-helm)      ;;
 ;;----------------------------------------------------------------------------
 ;; init style
 ;;----------------------------------------------------------------------------
 
 (require 'init-style) ;; Theme and GUI
+(require 'init-lua) ;; lua
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------

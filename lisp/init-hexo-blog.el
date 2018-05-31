@@ -39,6 +39,16 @@
       (semgilo/insert-org-img-link "./" (concat basename ".png"))))
   (insert "\n"))
 
+(defun semgilo/record-screencapture (basename)
+  "Take a screenshot into a time stamped unique-named file in the
+  same directory as the org-buffer/markdown-buffer and insert a link to this file."
+  (interactive "sScreenshot name: ")
+  (call-process "/Applications/LICPcap.app" nil 0)
+  )
+  
 (global-set-key [C-s-268632065] 'semgilo/capture-screenshot)
+
+
+
 
 (provide 'init-hexo-blog)

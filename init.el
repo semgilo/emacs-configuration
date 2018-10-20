@@ -38,7 +38,7 @@
 ;; init style
 ;;----------------------------------------------------------------------------
 
-(require 'init-style) ;; Theme and GUI
+(require 'init-text-editor) ;; Theme and GUI
 (require 'init-lua) ;; lua
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes

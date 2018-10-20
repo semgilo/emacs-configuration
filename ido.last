@@ -2,14 +2,15 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/lanhuzi-semgilo/.emacs.d/" . "lisp/")
  ("/Users/lanhuzi-semgilo/Documents/git/" . "gtd/")
- ("/Users/lanhuzi-semgilo/Documents/" . "git/")
- ("/Users/lanhuzi-semgilo/" . "Documents/")
+ ("/Users/lanhuzi-semgilo/Documents/" . "luaproj/")
+ ("/Users/lanhuzi-semgilo/" . ".emacs.d/")
  ("/Users/semgilo/.emacs.d/elpa-25.1/" . "hexo-20170308.205/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Client/" . "ªª∆§◊ ‘¥/")
  ("/Users/semgilo/.emacs.d/" . "lisp/")
  ("/" . "Users/")
- ("/Users/" . "semgilo/")
+ ("/Users/" . "lanhuzi-semgilo/")
  ("/Users/semgilo/Documents/Github/gtd/" . "work/")
  ("/Users/semgilo/Documents/Github/" . "gtd/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/" . "CH/")
@@ -24,6 +25,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/lanhuzi-semgilo/.emacs.d/"
+ "/Users/lanhuzi-semgilo/.emacs.d/lisp/"
  "/Users/lanhuzi-semgilo/Documents/git/gtd/"
  "/Users/semgilo/.emacs.d/lisp/"
  "/Users/semgilo/.emacs.d/"
@@ -38,31 +41,37 @@
 
 ;; ----- ido-work-file-list -----
 (
- "2018-1-15.org"
- "2017-5-23.org"
- "2018-10-16.org"
- "init-hexo-blog.el"
- "init-style.el"
- "init-base-gui.el"
- "init-lua.el"
  "init.el"
- "2018-2-27.org"
- "2018-2-26.org"
+ "init-text-editor.el"
+ "init-ivy.el"
+ "init-base-gui.el"
+ "init-style.el"
+ "init-lua.el"
+ ".dir-locals.el"
+ "init-utils.el"
+ "init-benchmarking.el"
+ "custom.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lanhuzi-semgilo/Documents/git/gtd/" (23493 21314 632296 228000) "2018-1-17.org" "2018-1-29.org" "2018-1-15.org" "2017-8-10.org" "2017-8-11.org" "2017-5-6.org" "2017-8-15.org" "2017-8-29.org" "2017-8-14.org" ".git/" "just-do-it.org" "2017-5-3.org" "2017-8-17.org" "2018-2-24.org" "2017-9-19.org" "2017-9-25.org" "2018-2-27.org" "2018-2-26.org" "2017-9-26.org" "2018.org" ".gitignore" "2018-2-22.org" "2017-5-23.org" "2018-2-23.org" "2017-9-20.org" "2017-9-11.org" ".#2018-10-16.org" "2017-8-26.org" "2017-8-31.org" "2017-8-24.org" "2017-8-18.org" "2017-9-6.org" "2017-8-21.org" "2018-1-18.org" "2017-9-5.org" "2018-1-26.org" "2017-5-9.org" "../" "./")
+ ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23499 19512 296517 839000) "init-yasnippet.el" "init-lua.el" "init-helm.el" "init-benchmarking.el" ".#init-text-editor.el" "init-hexo-blog.el" "init-elpa.el" "test2.png" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" ".#init-hexo-blog.el" "init-exec-path.el" "init-site-lisp.el" "../" "./")
 
- ("/Users/lanhuzi-semgilo/.emacs.d/" (23493 19605 794600 42000) ".git/" "elpa-26.1/" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
+ ("/Users/lanhuzi-semgilo/.emacs.d/" (23499 18415 685659 192000) ".git/" "elpa-26.1/" "recentf" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/" (23499 13392 369970 92000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" ".vim/" "Documentsicon-20@2x.png" "Music/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/git/gtd/" (23493 22157 795022 802000) "2018-1-17.org" "2018-1-29.org" "2018-1-15.org" "2017-8-10.org" "2017-8-11.org" "2017-5-6.org" "2017-8-15.org" "2017-8-29.org" "2017-8-14.org" ".git/" "just-do-it.org" "2017-5-3.org" "2017-8-17.org" "2018-10-16.org" "2018-2-24.org" "2017-9-19.org" "2017-9-25.org" "2018-2-27.org" "2018-2-26.org" "2017-9-26.org" "2018.org" ".gitignore" "2018-2-22.org" "2017-5-23.org" "2018-2-23.org" "2017-9-20.org" "2017-9-11.org" ".#2018-10-16.org" "2017-8-26.org" "2017-8-31.org" "2017-8-24.org" "2017-8-18.org" "2017-9-6.org" "2017-8-21.org" "2018-1-18.org" "2017-9-5.org" "2018-1-26.org" "2017-5-9.org" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/luaproj/" (23498 51454 550997 958000) "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/" (23498 51459 261442 653000) "www2.zip" "git/" "sqlstruct.sql" ".UTSystemConfig/" "mysql.txt" "AnySDKFiles/" "dev/" "郑惟敏(95424853).html" "MuMu共享文件夹/" "proj.ios_mac_yingci_sgyxzn/" "ios_1006422_lhzz_106.zip" "新建 WinRAR 压缩文件管理器.rar" "ECLIPSE ANDROID PROJECT IMPORT SUMMARY" "duiying.txt" "tests/" "alipay/" "luaproj/" "root.zip" ".localized" "www.zip" "redgame.sql" ".DS_Store" "proj.ios_mac_yingci_sgyxzn.zip" "svn/" "新建 WinRAR 压缩文件管理器/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/.emacs.d/site-lisp/" (23493 19486 393911 136000) "../" "./")
 
  ("/Users/" (23486 46255 167289 980000) "Guest/" "Shared/" ".localized" "lanhuzi-semgilo/" "../" "./")
 
  ("/Users/lanhuzi-semgilo/Documents/git/" (23493 21241 122601 794000) "Sanguo/" ".git/" "gtd/" "build/" "Reachability/" "gold/" "obfuscator/" "goldred/" "general/" "gold-web-server/" "class-dump/" ".DS_Store" "tools/" "gen-code/" "ThinkPHP5-alipay/" "tutorial-hot-update/" "../" "./")
-
- ("/Users/lanhuzi-semgilo/Documents/" (23487 29446 145630 423000) "www2.zip" "git/" "sqlstruct.sql" ".UTSystemConfig/" "mysql.txt" "AnySDKFiles/" "dev/" "郑惟敏(95424853).html" "MuMu共享文件夹/" "proj.ios_mac_yingci_sgyxzn/" "ios_1006422_lhzz_106.zip" "新建 WinRAR 压缩文件管理器.rar" "ECLIPSE ANDROID PROJECT IMPORT SUMMARY" "duiying.txt" "tests/" "alipay/" "root.zip" ".localized" "www.zip" "redgame.sql" ".DS_Store" "proj.ios_mac_yingci_sgyxzn.zip" "svn/" "新建 WinRAR 压缩文件管理器/" "../" "./")
-
- ("/Users/lanhuzi-semgilo/" (23493 19337 651673 773000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" "Documentsicon-20@2x.png" "Music/" "../" "./")
 
  ("/Users/semgilo/.emacs.d/lisp/" (23221 62661 125183 14000) "init-yasnippet.el" "init-lua.el" "init-style.el" "init-helm.el" "init-benchmarking.el" "init-base-gui.el" "init-hexo-blog.el" "init-elpa.el" "test2.png" "init-compat.el" "init-utils.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-site-lisp.el" ".dir-locals.el" "../" "./")
 

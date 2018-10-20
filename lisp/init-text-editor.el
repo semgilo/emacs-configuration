@@ -4,7 +4,6 @@
 (require-package 'monokai-theme)
 (load-theme 'monokai t)
 
-
 ;;----------------------------------------------------------------------------
 ;;  GUI 
 ;;----------------------------------------------------------------------------
@@ -56,16 +55,15 @@
 (require-package 'ace-window)
 (global-set-key (kbd "M-p") 'ace-window)
 
+
+;; ivy
+(require 'init-ivy)
+
 ;; find-file-in-project
 (require-package 'find-file-in-project)
 (setq ffip-project-root "~/Documents/git")
-;; (defun semgilo/open-lua-project (path)
-;;   (interactive "input path: ")
 
-;;   (if (file-exists-p (file-name-directory path))
-;;       ;; open a file and write something
-      
-  
+
 
 (global-set-key [C-s-268632065] 'semgilo/capture-screenshot)
 

@@ -1,4 +1,0 @@
-#+LAYOUT: 
-#+CATEGORIES: 
-#+LAYOUT: 
-#+CATEGORIES: 

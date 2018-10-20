@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/lanhuzi-semgilo/Documents/git/" . "gtd/")
+ ("/Users/lanhuzi-semgilo/Documents/" . "git/")
+ ("/Users/lanhuzi-semgilo/" . "Documents/")
  ("/Users/semgilo/.emacs.d/elpa-25.1/" . "hexo-20170308.205/")
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Client/" . "ªª∆§◊ ‘¥/")
  ("/Users/semgilo/.emacs.d/" . "lisp/")
@@ -21,6 +24,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/lanhuzi-semgilo/Documents/git/gtd/"
  "/Users/semgilo/.emacs.d/lisp/"
  "/Users/semgilo/.emacs.d/"
  "/Users/semgilo/Documents/Github/gtd/"
@@ -34,6 +38,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "2018-1-15.org"
+ "2017-5-23.org"
+ "2018-10-16.org"
  "init-hexo-blog.el"
  "init-style.el"
  "init-base-gui.el"
@@ -41,13 +48,22 @@
  "init.el"
  "2018-2-27.org"
  "2018-2-26.org"
- "2018-2-24.org"
- "2018-2-23.org"
- "2018-1-15.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/lanhuzi-semgilo/Documents/git/gtd/" (23493 21314 632296 228000) "2018-1-17.org" "2018-1-29.org" "2018-1-15.org" "2017-8-10.org" "2017-8-11.org" "2017-5-6.org" "2017-8-15.org" "2017-8-29.org" "2017-8-14.org" ".git/" "just-do-it.org" "2017-5-3.org" "2017-8-17.org" "2018-2-24.org" "2017-9-19.org" "2017-9-25.org" "2018-2-27.org" "2018-2-26.org" "2017-9-26.org" "2018.org" ".gitignore" "2018-2-22.org" "2017-5-23.org" "2018-2-23.org" "2017-9-20.org" "2017-9-11.org" ".#2018-10-16.org" "2017-8-26.org" "2017-8-31.org" "2017-8-24.org" "2017-8-18.org" "2017-9-6.org" "2017-8-21.org" "2018-1-18.org" "2017-9-5.org" "2018-1-26.org" "2017-5-9.org" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/.emacs.d/" (23493 19605 794600 42000) ".git/" "elpa-26.1/" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
+
+ ("/Users/" (23486 46255 167289 980000) "Guest/" "Shared/" ".localized" "lanhuzi-semgilo/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/git/" (23493 21241 122601 794000) "Sanguo/" ".git/" "gtd/" "build/" "Reachability/" "gold/" "obfuscator/" "goldred/" "general/" "gold-web-server/" "class-dump/" ".DS_Store" "tools/" "gen-code/" "ThinkPHP5-alipay/" "tutorial-hot-update/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/" (23487 29446 145630 423000) "www2.zip" "git/" "sqlstruct.sql" ".UTSystemConfig/" "mysql.txt" "AnySDKFiles/" "dev/" "郑惟敏(95424853).html" "MuMu共享文件夹/" "proj.ios_mac_yingci_sgyxzn/" "ios_1006422_lhzz_106.zip" "新建 WinRAR 压缩文件管理器.rar" "ECLIPSE ANDROID PROJECT IMPORT SUMMARY" "duiying.txt" "tests/" "alipay/" "root.zip" ".localized" "www.zip" "redgame.sql" ".DS_Store" "proj.ios_mac_yingci_sgyxzn.zip" "svn/" "新建 WinRAR 压缩文件管理器/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/" (23493 19337 651673 773000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" "Documentsicon-20@2x.png" "Music/" "../" "./")
+
  ("/Users/semgilo/.emacs.d/lisp/" (23221 62661 125183 14000) "init-yasnippet.el" "init-lua.el" "init-style.el" "init-helm.el" "init-benchmarking.el" "init-base-gui.el" "init-hexo-blog.el" "init-elpa.el" "test2.png" "init-compat.el" "init-utils.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-site-lisp.el" ".dir-locals.el" "../" "./")
 
  ("/Users/semgilo/.emacs.d/" (23302 9313 598186 584000) ".git/" "recentf" "site-lisp/" ".#recentf" ".gitignore" "elpa-25.1/" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
@@ -87,8 +103,6 @@
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Client/src/64/src/client/sdk/" (23158 34540 189157 308000) "YijieInterface.lua" "DataEye/" "SDKManager.lua" "init.lua" "../" "./")
 
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/Bin/src/CH/" (23148 15197 585171 826000) "ch_gm.lua" "ch_skill.lua" "ch_festival.lua" "ch_vip.lua" "ch_hot.lua" "ch_worldBoss.lua" "ch_topwarNpc.lua" "ch_arenaAward.lua" "ch_fateSoul.lua" "ch_sound.lua" "ch_faction.lua" "ch_treasureFragment.lua" "ch_slave.lua" "ch_guide.lua" "ch_chat.lua" "ch_collectionReward.lua" "ch_recruit.lua" "ch_society.lua" "ch_exp.lua" "#all.lua#" "ch_serverList.lua" "ch_common.lua" "ch_recharge.lua" "ch_notice.lua" "ch_messageTips.lua" "ch_signin.lua" "ch_raffle.lua" "ch_battle.lua" "ch_banQuet.lua" "ch_VIPPrivilege.lua" "ch_Dreamland.lua" "ch_item.lua" "ch_player.lua" "ch_TopWar.lua" "ch_arenaNpc.lua" "ch_endlesstower.lua" "ch_map.lua" "ch_banText.lua" "ch_shop.lua" "ch_noticeTips.lua" "ch_starSecret.lua" "ch_sail.lua" "ch_societyNpc.lua" "all.lua" "ch_wish.lua" "ch_magicWare.lua" ".DS_Store" "ch_formula.lua" "ch_equipment.lua" "ch_mail.lua" "ch_price.lua" "ch_bossCome.lua" "ch_cdkey.lua" "ch_hero.lua" "ch_activity.lua" "ch_pvpRankReward.lua" "../" "./")
-
- ("/Users/" (23131 15554 362419 520000) "semgilo/" "Guest/" "Shared/" ".localized" "../" "./")
 
  ("/Users/semgilo/Documents/SVN/Sanguo/Code/trunk/" (23026 39281 0 0) "Spine0430备份/" "Spine/" "Server/" "SanGuoClient/" "Particle/" "icon/" "httpServer/" "Communal/" "CocosProject/" "Client/" "Bin/" ".DS_Store" "../" "./")
 

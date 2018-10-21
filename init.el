@@ -32,14 +32,16 @@
 ;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
-(require 'init-yasnippet) ;; 
+(require 'init-yasnippet) ;;
 ;;(require 'init-helm)      ;;
 ;;----------------------------------------------------------------------------
-;; init style
+;; init code editor
 ;;----------------------------------------------------------------------------
-
+(require 'init-company) ;; company
+(require 'init-flycheck) ;; flycheck
 (require 'init-text-editor) ;; Theme and GUI
 (require 'init-lua) ;; lua
+(require 'init-python) ;; python
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------

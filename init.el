@@ -42,6 +42,7 @@
 (require 'init-text-editor) ;; Theme and GUI
 (require 'init-lua) ;; lua
 (require 'init-python) ;; python
+(require 'init-html) ;; html
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------

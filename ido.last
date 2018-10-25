@@ -25,8 +25,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/lanhuzi-semgilo/.emacs.d/"
  "/Users/lanhuzi-semgilo/.emacs.d/lisp/"
+ "/Users/lanhuzi-semgilo/.emacs.d/"
  "/Users/lanhuzi-semgilo/Documents/git/gtd/"
  "/Users/semgilo/.emacs.d/lisp/"
  "/Users/semgilo/.emacs.d/"
@@ -41,6 +41,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "init-html.el"
  "init.el"
  "init-text-editor.el"
  "init-ivy.el"
@@ -50,14 +51,13 @@
  ".dir-locals.el"
  "init-utils.el"
  "init-benchmarking.el"
- "custom.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23499 19512 296517 839000) "init-yasnippet.el" "init-lua.el" "init-helm.el" "init-benchmarking.el" ".#init-text-editor.el" "init-hexo-blog.el" "init-elpa.el" "test2.png" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" ".#init-hexo-blog.el" "init-exec-path.el" "init-site-lisp.el" "../" "./")
+ ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23501 57408 984724 234000) "init-yasnippet.el" "init-python.el" "init-lua.el" "init-helm.el" "init-benchmarking.el" "init-hexo-blog.el" "init-elpa.el" "init-company.el" "test2.png" "init-html.el" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" ".#init-hexo-blog.el" "init-exec-path.el" "init-flycheck.el" "init-site-lisp.el" "../" "./")
 
- ("/Users/lanhuzi-semgilo/.emacs.d/" (23499 18415 685659 192000) ".git/" "elpa-26.1/" "recentf" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
+ ("/Users/lanhuzi-semgilo/.emacs.d/" (23501 58257 527859 920000) ".git/" "anaconda-mode/" ".historian" "elpa-26.1/" "recentf" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
 
  ("/Users/lanhuzi-semgilo/" (23499 13392 369970 92000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" ".vim/" "Documentsicon-20@2x.png" "Music/" "../" "./")
 

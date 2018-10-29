@@ -41,6 +41,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "init-blog.el"
+ "init-elpa.el"
  "init-html.el"
  "init.el"
  "init-text-editor.el"
@@ -49,17 +51,15 @@
  "init-style.el"
  "init-lua.el"
  ".dir-locals.el"
- "init-utils.el"
- "init-benchmarking.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23501 57408 984724 234000) "init-yasnippet.el" "init-python.el" "init-lua.el" "init-helm.el" "init-benchmarking.el" "init-hexo-blog.el" "init-elpa.el" "init-company.el" "test2.png" "init-html.el" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" ".#init-hexo-blog.el" "init-exec-path.el" "init-flycheck.el" "init-site-lisp.el" "../" "./")
+ ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23510 25888 509773 168000) "init-yasnippet.el" "init-python.el" "init-blog.el" "init-lua.el" "init-helm.el" "init-benchmarking.el" "init-hexo-blog.el" "init-elpa.el" "init-company.el" "test2.png" "init-html.el" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-flycheck.el" "init-site-lisp.el" ".#init-blog.el" "../" "./")
 
- ("/Users/lanhuzi-semgilo/.emacs.d/" (23501 58257 527859 920000) ".git/" "anaconda-mode/" ".historian" "elpa-26.1/" "recentf" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "custom.el" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
+ ("/Users/lanhuzi-semgilo/.emacs.d/" (23510 20910 470571 175000) ".git/" "anaconda-mode/" ".historian" "elpa-26.1/" "recentf" "site-lisp/" ".gitignore" "init.el" "auto-save-list/" "server/" "custom.el" "eshell/" ".mc-lists.el" "lisp/" "ido.last" "snippets/" "../" "./")
 
- ("/Users/lanhuzi-semgilo/" (23499 13392 369970 92000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" ".vim/" "Documentsicon-20@2x.png" "Music/" "../" "./")
+ ("/Users/lanhuzi-semgilo/" (23509 51071 634275 323000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" ".npm/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" ".ipython/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" ".vim/" "Documentsicon-20@2x.png" "Music/" "../" "./")
 
  ("/Users/lanhuzi-semgilo/Documents/git/gtd/" (23493 22157 795022 802000) "2018-1-17.org" "2018-1-29.org" "2018-1-15.org" "2017-8-10.org" "2017-8-11.org" "2017-5-6.org" "2017-8-15.org" "2017-8-29.org" "2017-8-14.org" ".git/" "just-do-it.org" "2017-5-3.org" "2017-8-17.org" "2018-10-16.org" "2018-2-24.org" "2017-9-19.org" "2017-9-25.org" "2018-2-27.org" "2018-2-26.org" "2017-9-26.org" "2018.org" ".gitignore" "2018-2-22.org" "2017-5-23.org" "2018-2-23.org" "2017-9-20.org" "2017-9-11.org" ".#2018-10-16.org" "2017-8-26.org" "2017-8-31.org" "2017-8-24.org" "2017-8-18.org" "2017-9-6.org" "2017-8-21.org" "2018-1-18.org" "2017-9-5.org" "2018-1-26.org" "2017-5-9.org" "../" "./")
 

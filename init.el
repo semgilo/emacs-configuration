@@ -46,7 +46,7 @@
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
-
+(require 'init-org)
 (require 'init-blog)
 ;; (require 'init-hexo-blog)	  ;; Hexo blog
 (require 'init-graphviz-dot-mode) ;; Graphviz-dot-mode

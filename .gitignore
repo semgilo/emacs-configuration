@@ -8,3 +8,5 @@ lisp/.#*
 .historian
 anaconda-mode
 eshell/
+#.*
+.#*

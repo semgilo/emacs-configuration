@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	counsel-M-x
 	keyboard-escape-quit
 	))
 
@@ -12,5 +13,6 @@
 	hungry-delete-backward
 	indent-new-comment-line
 	ns-paste-secondary
+	org-return-indent
 	upcase-region
 	))

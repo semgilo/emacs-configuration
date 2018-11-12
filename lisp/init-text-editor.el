@@ -29,6 +29,8 @@
 ;; (setq linum-format "%d| ") ;set format
 
 
+
+
 ;;----------------------------------------------------------------------------
 ;;  Operation 
 ;;----------------------------------------------------------------------------
@@ -59,6 +61,8 @@
 (require-package 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+;; select region color
+(set-face-attribute 'region nil :background "#333")
 
 ;; ivy
 (require 'init-ivy)

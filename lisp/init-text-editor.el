@@ -55,6 +55,10 @@
 (require-package 'ace-window)
 (global-set-key (kbd "M-p") 'ace-window)
 
+;; expand-region
+(require-package 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 
 ;; ivy
 (require 'init-ivy)

@@ -62,7 +62,7 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; select region color
-(set-face-attribute 'region nil :background "#333")
+(set-face-attribute 'region nil :background "#000000")
 
 ;; ivy
 (require 'init-ivy)
@@ -109,12 +109,12 @@
   arg lines up."
   (interactive "*p")
   (move-text-internal (- arg)))
-
+ 
 (provide 'move-text)
 
 
-(global-set-key [M-up] 'move-text-up)
-(global-set-key [M-down] 'move-text-down)
+(global-set-key (kbd "C-S-n") 'move-text-down)
+(global-set-key (kbd "C-S-p") 'move-text-up)
 
 ;;----------------------------------------------------------------------------
 ;; Stop C-z from minimizing windows under OS X

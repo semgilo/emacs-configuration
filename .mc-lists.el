@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
 	counsel-M-x
+	goto-line
 	keyboard-escape-quit
 	))
 
@@ -12,6 +13,7 @@
 	eval-print-last-sexp
 	hungry-delete-backward
 	indent-new-comment-line
+	mouse-set-region
 	ns-paste-secondary
 	org-return-indent
 	upcase-region

@@ -42,11 +42,12 @@
 (require 'init-text-editor) ;; Theme and GUI
 (require 'init-lua) ;; lua
 (require 'init-python) ;; python
-(require 'init-html) ;; html
+;; (require 'init-html) ;; html
 ;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
-(require 'init-org)
-(require 'init-blog)
+(require-package 'org-pomodoro)
+;;(require 'init-org)
+;;(require 'init-blog)
 ;; (require 'init-hexo-blog)	  ;; Hexo blog
-(require 'init-graphviz-dot-mode) ;; Graphviz-dot-mode
+;;(require 'init-graphviz-dot-mode) ;; Graphviz-dot-mode

@@ -27,9 +27,9 @@
 ;; ----- ido-work-directory-list -----
 (
  "/Users/lanhuzi-semgilo/.emacs.d/"
- "/Users/lanhuzi-semgilo/Documents/git/lucky-confuser/"
  "/Users/lanhuzi-semgilo/.emacs.d/lisp/"
  "/Users/lanhuzi-semgilo/Documents/git/gtd/"
+ "/Users/lanhuzi-semgilo/Documents/git/lucky-confuser/"
  "/Users/semgilo/.emacs.d/lisp/"
  "/Users/semgilo/.emacs.d/"
  "/Users/semgilo/Documents/Github/gtd/"
@@ -44,40 +44,40 @@
 ;; ----- ido-work-file-list -----
 (
  "init.el"
+ "init-org.el"
+ "init-text-editor.el"
+ "init-ivy.el"
+ "finished.org"
  "init-blog.el"
  "init-elpa.el"
  "init-html.el"
- "init-text-editor.el"
- "init-ivy.el"
  "init-base-gui.el"
  "init-style.el"
- "init-lua.el"
- ".dir-locals.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/lanhuzi-semgilo/.emacs.d/" (23679 15708 10372 809000) ".git/" "anaconda-mode/" ".historian" "elpa-26.1/" "recentf" "site-lisp/" "test-startup.sh" ".gitignore" "org-clock-save.el" "init.el" "auto-save-list/" "server/" "custom.el" "eshell/" ".mc-lists.el" "custom.el~" "lisp/" "ido.last" "snippets/" "../" "./")
+ ("/Users/lanhuzi-semgilo/Documents/git/gtd/" (23691 6826 884727 265000) "2018-1-17.org" "2018-1-29.org" "2018-1-15.org" "2017-8-10.org" "2017-8-11.org" "2017-5-6.org" "2017-8-15.org" "2017-8-29.org" "2017-8-14.org" ".git/" "just-do-it.org" "2017-5-3.org" "2017-8-17.org" "2018-10-16.org" "2018-2-24.org" "2017-9-19.org" "2017-9-25.org" "2018-2-27.org" ".#2018-10-30.org" "2018-2-26.org" "2017-9-26.org" "2018.org" ".gitignore" "2018-2-22.org" "finished.org" "2017-5-23.org" "2018-2-23.org" "2017-9-20.org" "2017-9-11.org" "inbox.org" "todo.org" ".#2018-10-16.org" "task.org" "2017-8-26.org" "2018-10-30.org" "2017-8-31.org" ".DS_Store" "2017-8-24.org" "2017-8-18.org" "2018-11-5.org" "2017-9-6.org" "note.org" "2017-8-21.org" "2018-1-18.org" "2017-9-5.org" "2018-1-26.org" "inbox.org_archive" "2017-5-9.org" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23684 48890 128013 332000) "init-yasnippet.el" "init-python.el" "init-blog.el" "init-lua.el" "init-org.el" "init-helm.el" "init-benchmarking.el" "init-hexo-blog.el" "init-elpa.el" "init-company.el" "test2.png" "init-html.el" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-flycheck.el" "init-site-lisp.el" ".dir-locals.el" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/.emacs.d/" (23684 49407 543057 754000) "ditaa0_9.jar" ".git/" "anaconda-mode/" ".historian" "elpa-26.1/" "recentf" "site-lisp/" "plantuml.jar" "test-startup.sh" ".gitignore" "bookmarks" "org-clock-save.el" "init.el" "auto-save-list/" "server/" "custom.el" "eshell/" ".mc-lists.el" "custom.el~" "lisp/" "ido.last" "snippets/" "../" "./")
+
+ ("/Users/" (23612 41595 589318 969000) "Guest/" "Shared/" ".localized" "lanhuzi-semgilo/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/git/lucky-confuser/" (23659 26591 495128 560000) "WordGenerater.pyc" "action_words" "confuser.spec" "const.py" "pasers/" ".git/" "build/" "readme.txt" "ConfigGenerater.pyc" "LuckyConfuser.pyc" "noun_words" ".gitignore" "XCodeProjectManager.pyc" "gen_confuse_code.py" "WordGenerater.py" "confuser.py" "utils/" "LuckyConfuser.py" "ConfigGenerater.py" "confusers/" "dist/" "XCodeProjectManager.py" ".DS_Store" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/" (23663 45825 651593 376000) "git/" ".UTSystemConfig/" "dev/" "ECLIPSE ANDROID PROJECT IMPORT SUMMARY" ".localized" ".DS_Store" "svn/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/Documents/git/" (23678 39455 448670 270000) "CJApplication/" "apps/" "lucky-confuser/" "www.lanhuzi.com/" "gtd/" "build/" "BlackHole/" "HWIFileDownload/" "ascii-encoder/" "emacs.d/" "ADManager_confused/" "gold/" "mod-pbxproj/" "ADTest/" "Code-Confuse-Plugin/" "majiabao/" "ADManager/" "ADManager_pure/" "goldred/" "Fmod-Sample-3d/" "cocos2d-x-fmod/" "LXLiWuShuoDemo/" "gold-web-server/" "class-dump/" ".DS_Store" "tools/" "gen-code/" "ThinkPHP5-alipay/" "tutorial-hot-update/" "../" "./")
+
+ ("/Users/lanhuzi-semgilo/" (23684 46853 101791 973000) "confuser.spec" ".zlogin" ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".gem/" ".bash_profile" ".mono/" ".mysql_history" ".swt/" "build/" "Documents/" ".npm/" ".itmstransporter/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" ".profile" "Movies/" ".ssh/" "Public/" "CJTool/" ".bash_sessions/" ".cocoapods/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".IdentityService/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".rvmrc" ".lesshst" ".mkshrc" "Library/" "Desktop/" ".rvm/" ".ipython/" ".kingsoft/" ".notes" "project.manifest" "Pictures/" ".local/" ".ServiceHub/" ".zshrc" ".bashrc" ".subversion/" "dist/" ".CFUserTextEncoding" ".lldb/" ".CocosCreator/" ".DS_Store" ".vim/" ".gemrc" "Documentsicon-20@2x.png" "Music/" ".config/" "../" "./")
 
  ("/Users/lanhuzi-semgilo/Documents/git/lucky-confuser/confusers/" (23526 37011 114128 72000) "../" "./")
 
- ("/Users/lanhuzi-semgilo/Documents/git/lucky-confuser/" (23533 36654 375930 615000) "action_words" "pasers/" ".git/" "noun_words" ".gitignore" "gen_confuse_code.py" "xcproject_utils.py" "confuser.py" "utils/" "confusers/" ".DS_Store" "../" "./")
-
- ("/Users/lanhuzi-semgilo/.emacs.d/lisp/" (23510 25888 509773 168000) "init-yasnippet.el" "init-python.el" "init-blog.el" "init-lua.el" "init-helm.el" "init-benchmarking.el" "init-hexo-blog.el" "init-elpa.el" "init-company.el" "test2.png" "init-html.el" "init-compat.el" "init-ivy.el" "init-utils.el" "init-text-editor.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-flycheck.el" "init-site-lisp.el" ".#init-blog.el" "../" "./")
-
- ("/Users/lanhuzi-semgilo/" (23509 51071 634275 323000) ".idapro/" ".viminfo" ".bash_history" ".gitconfig" "Downloads/" "AndroidStudioProjects/" ".bash_profile" ".mysql_history" ".swt/" "Documents/" ".npm/" "www_alipay/" ".BCDiff" ".Trash/" ".gradle/" "Movies/" ".ssh/" "Public/" ".bash_sessions/" ".android/" ".emacs.d/" ".ShadowsocksX-NG/" "www/" ".emulator_console_auth_token" ".oracle_jre_usage/" ".lesshst" "Library/" "Desktop/" ".ipython/" "project.manifest" "Pictures/" ".bashrc" ".subversion/" ".CFUserTextEncoding" ".CocosCreator/" ".DS_Store" ".vim/" "Documentsicon-20@2x.png" "Music/" "../" "./")
-
- ("/Users/lanhuzi-semgilo/Documents/git/gtd/" (23493 22157 795022 802000) "2018-1-17.org" "2018-1-29.org" "2018-1-15.org" "2017-8-10.org" "2017-8-11.org" "2017-5-6.org" "2017-8-15.org" "2017-8-29.org" "2017-8-14.org" ".git/" "just-do-it.org" "2017-5-3.org" "2017-8-17.org" "2018-10-16.org" "2018-2-24.org" "2017-9-19.org" "2017-9-25.org" "2018-2-27.org" "2018-2-26.org" "2017-9-26.org" "2018.org" ".gitignore" "2018-2-22.org" "2017-5-23.org" "2018-2-23.org" "2017-9-20.org" "2017-9-11.org" ".#2018-10-16.org" "2017-8-26.org" "2017-8-31.org" "2017-8-24.org" "2017-8-18.org" "2017-9-6.org" "2017-8-21.org" "2018-1-18.org" "2017-9-5.org" "2018-1-26.org" "2017-5-9.org" "../" "./")
-
  ("/Users/lanhuzi-semgilo/Documents/luaproj/" (23498 51454 550997 958000) "../" "./")
 
- ("/Users/lanhuzi-semgilo/Documents/" (23498 51459 261442 653000) "www2.zip" "git/" "sqlstruct.sql" ".UTSystemConfig/" "mysql.txt" "AnySDKFiles/" "dev/" "郑惟敏(95424853).html" "MuMu共享文件夹/" "proj.ios_mac_yingci_sgyxzn/" "ios_1006422_lhzz_106.zip" "新建 WinRAR 压缩文件管理器.rar" "ECLIPSE ANDROID PROJECT IMPORT SUMMARY" "duiying.txt" "tests/" "alipay/" "luaproj/" "root.zip" ".localized" "www.zip" "redgame.sql" ".DS_Store" "proj.ios_mac_yingci_sgyxzn.zip" "svn/" "新建 WinRAR 压缩文件管理器/" "../" "./")
-
  ("/Users/lanhuzi-semgilo/.emacs.d/site-lisp/" (23493 19486 393911 136000) "../" "./")
-
- ("/Users/" (23486 46255 167289 980000) "Guest/" "Shared/" ".localized" "lanhuzi-semgilo/" "../" "./")
-
- ("/Users/lanhuzi-semgilo/Documents/git/" (23493 21241 122601 794000) "Sanguo/" ".git/" "gtd/" "build/" "Reachability/" "gold/" "obfuscator/" "goldred/" "general/" "gold-web-server/" "class-dump/" ".DS_Store" "tools/" "gen-code/" "ThinkPHP5-alipay/" "tutorial-hot-update/" "../" "./")
 
  ("/Users/semgilo/.emacs.d/lisp/" (23221 62661 125183 14000) "init-yasnippet.el" "init-lua.el" "init-style.el" "init-helm.el" "init-benchmarking.el" "init-base-gui.el" "init-hexo-blog.el" "init-elpa.el" "test2.png" "init-compat.el" "init-utils.el" "init-graphviz-dot-mode.el" "init-exec-path.el" "init-site-lisp.el" ".dir-locals.el" "../" "./")
 

@@ -21,6 +21,7 @@
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
   ;; Official MELPA Mirror, in case necessary.
   ;;(add-to-list 'package-archives (cons "melpa-mirror" (concat proto "://www.mirrorservice.org/sites/melpa.org/packages/")) t)
+  (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
   (if (< emacs-major-version 24)
       ;; For important compatibility libraries like cl-lib
       (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))

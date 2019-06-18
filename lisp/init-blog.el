@@ -2,7 +2,6 @@
 
 (with-eval-after-load 'ox
   (require 'ox-hugo))
-(require 'ox-hugo-auto-export)
 
 
 ;; Populates only the EXPORT_FILE_NAME property in the inserted headline.
@@ -28,7 +27,7 @@ See `org-capture-templates' for more information."
                  ;; It is assumed that below file is present in `org-directory'
                  ;; and that it has a "Blog Ideas" heading. It can even be a
                  ;; symlink pointing to the actual location of all-posts.org!
-                 (file+olp "all-posts.org" "Blog Ideas")
+                 (file+olp "~/Documents/git/gtd/all-posts.org" "Blog Ideas")
                  (function org-hugo-new-subtree-post-capture-template))))
 
 (defun write-blog ()

@@ -1,1 +1,2 @@
-;; org-clock-save.el - IPV6.local at <2019-03-05 Tue 10:56>
+;; org-clock-save.el - IPV6.local at <2019-06-18 Tue 11:14>
+(setq org-clock-stored-history '(("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 15801) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16845) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16038) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16608) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 17163)))

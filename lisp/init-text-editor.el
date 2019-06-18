@@ -129,11 +129,11 @@
 
 ;; set emacs default
 (split-window-right)
-(other-window 1)
-(split-window-vertically)
-(find-file "~/Documents/git/gtd/todo.org")
-(other-window 1)
-(switch-to-buffer "*eshell*")(eshell)
-(other-window 1)
+;;(other-window 1)
+;;(split-window-vertically)
+;;(find-file "~/Documents/git/gtd/todo.org")
+;;(other-window 1)
+;;(switch-to-buffer "*eshell*")(eshell)
+;;(other-window 1)
 
 (provide 'init-text-editor)

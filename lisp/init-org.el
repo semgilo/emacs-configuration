@@ -44,6 +44,7 @@
 
 ;; Lots of stuff from http://doc.norang.ca/org-mode.html
 
+
 ;; TODO: fail gracefully
 (defun sanityinc/grab-ditaa (url jar-name)
   "Download URL and extract JAR-NAME as `org-ditaa-jar-path'."
@@ -133,14 +134,45 @@ typical word processor."
 
 (global-set-key (kbd "C-c c") 'org-capture)
 
-(setq org-capture-templates
-      `(("t" "todo" entry (file "")  ; "" => `org-default-notes-file'
-         "* NEXT %?\n%U\n" :clock-resume t)
-        ("n" "note" entry (file "")
-         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
-        ))
+(setq org-capture-templates nil)
+;; 
+(add-to-list 'org-capture-templates
+             '("j" "Journal" entry (file+datetree "~/Documents/git/gtd/journal.org")
+               "* %U - %^{heading}\n  %?"))
 
+(add-to-list 'org-capture-templates
+             '("l" "Link" entry (file+olp "~/Documents/git/gtd/note.org" "Links")
+               "** %?\n %U\n"))
 
+;; Task
+(add-to-list 'org-capture-templates '("t" "Tasks"))
+(add-to-list 'org-capture-templates
+             '("tl" "Life Task" entry
+               (file+olp "~/Documents/git/gtd/task.org" "Life")
+               "** TODO %^{name} :task:life:\n%^T\n"))
+(add-to-list 'org-capture-templates  
+             '("tw" "Work Task" entry
+               (file+headline "~/Documents/git/gtd/task.org" "Work")
+               "** TODO %^{name} :task:work:\n%^T\n"))
+(add-to-list 'org-capture-templates
+             '("ts" "Study Task" entry
+               (file+headline "~/Documents/git/gtd/task.org" "Study")
+               "** TODO %^{name} :task:study:\n%^T\n"))
+
+;; Projects
+(add-to-list 'org-capture-templates '("p" "Projects"))
+(add-to-list 'org-capture-templates
+             '("pl" "Life Project" entry
+               (file+olp "~/Documents/git/gtd/task.org" "Life")
+               "** TODO [#B] %^{name} [%]:project:life:\n%^T\n- [ ] %^{subtitle}\n"))
+(add-to-list 'org-capture-templates  
+             '("pw" "Work Project" entry
+               (file+headline "~/Documents/git/gtd/task.org" "Work")
+               "** TODO [#B] %^{name} [%]:project:work:\n%^T\n- [ ] %^{subtitle}\n"))
+(add-to-list 'org-capture-templates
+             '("ps" "Study Project" entry
+               (file+headline "~/Documents/git/gtd/task.org" "Study")
+               "** TODO [#B] %^{name} [%]:project:study:\n%^T\n- [ ] %^{subtitle}\n"))
 
 ;;; Refiling
 
@@ -184,104 +216,133 @@ typical word processor."
 ;;; To-do settings
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d!/!)")
-              (sequence "PROJECT(p)" "|" "DONE(d!/!)" "CANCELLED(c@/!)")
-              (sequence "WAITING(w@/!)" "DELEGATED(e!)" "HOLD(h)" "|" "CANCELLED(c@/!)")))
-      org-todo-repeat-to-state "NEXT")
+      (quote ((sequence "TODO(t)" "STARTED(s)" "WAITING(w)" "|" "CANNCELED(c!)" "FINISHED(f)" "DONE(d)")))
+      org-todo-repeat-to-state "TODO")
 
 (setq org-todo-keyword-faces
-      (quote (("NEXT" :inherit warning)
-              ("PROJECT" :inherit font-lock-string-face))))
+      (quote (("DONE" :inherit warning))))
 
+(defun semgilo/org-clock-in-if-starting ()
+  "Clock in when the task is marked STARTED."
+  (when (and (string= org-state "STARTED")
+	     (not (string= org-last-state org-state)))
+    (org-clock-in)))
 
+(add-hook 'org-after-todo-state-change-hook
+	  'semgilo/org-clock-in-if-starting)
+
+(defun semgilo/org-clock-out-if-waiting ()
+  "Clock out when the task is marked WAITING."
+  (when (and (string= org-state "WAITING")
+             (equal (marker-buffer org-clock-marker) (current-buffer))
+             (< (point) org-clock-marker)
+	     (> (save-excursion (outline-next-heading) (point))
+		org-clock-marker)
+	     (not (string= org-last-state org-state)))
+    (org-clock-out)))
+
+(add-hook 'org-after-todo-state-change-hook
+	  'semgilo/org-clock-out-if-waiting)
+
+;; (defun semgilo/org-clock-out-if-done ()
+;;   "Clock in when the task is marked DONE."
+;;   (when (and (string= org-state "DONE")
+;; 	     (not (string= org-last-state org-state)))
+;;     (org-clock-out)))
+
+;; (add-hook 'org-after-todo-state-change-hook
+;; 	  'semgilo/org-clock-out-if-done)
 
 ;;; Agenda views
 
 (setq-default org-agenda-clockreport-parameter-plist '(:link t :maxlevel 3))
 
 
-(let ((active-project-match "-INBOX/PROJECT"))
+(setq org-stuck-projects
+	   '("+project/-DONE-FINISHED" ("TODO" "STARTED" "WAITING")))
 
-  (setq org-stuck-projects
-        `(,active-project-match ("NEXT")))
+;; (let ((active-project-match "-INBOX/PROJECT"))
 
-  (setq org-agenda-compact-blocks t
-        org-agenda-sticky t
-        org-agenda-start-on-weekday nil
-        org-agenda-span 'day
-        org-agenda-include-diary nil
-        org-agenda-sorting-strategy
-        '((agenda habit-down time-up user-defined-up effort-up category-keep)
-          (todo category-up effort-up)
-          (tags category-up effort-up)
-          (search category-up))
-        org-agenda-window-setup 'current-window
-        org-agenda-custom-commands
-        `(("N" "Notes" tags "NOTE"
-           ((org-agenda-overriding-header "Notes")
-            (org-tags-match-list-sublevels t)))
-          ("g" "GTD"
-           ((agenda "" nil)
-            (tags "INBOX"
-                  ((org-agenda-overriding-header "Inbox")
-                   (org-tags-match-list-sublevels nil)))
-            (stuck ""
-                   ((org-agenda-overriding-header "Stuck Projects")
-                    (org-agenda-tags-todo-honor-ignore-options t)
-                    (org-tags-match-list-sublevels t)
-                    (org-agenda-todo-ignore-scheduled 'future)))
-            (tags-todo "-INBOX"
-                       ((org-agenda-overriding-header "Next Actions")
-                        (org-agenda-tags-todo-honor-ignore-options t)
-                        (org-agenda-todo-ignore-scheduled 'future)
-                        (org-agenda-skip-function
-                         '(lambda ()
-                            (or (org-agenda-skip-subtree-if 'todo '("HOLD" "WAITING"))
-                                (org-agenda-skip-entry-if 'nottodo '("NEXT")))))
-                        (org-tags-match-list-sublevels t)
-                        (org-agenda-sorting-strategy
-                         '(todo-state-down effort-up category-keep))))
-            (tags-todo ,active-project-match
-                       ((org-agenda-overriding-header "Projects")
-                        (org-tags-match-list-sublevels t)
-                        (org-agenda-sorting-strategy
-                         '(category-keep))))
-            (tags-todo "-INBOX/-NEXT"
-                       ((org-agenda-overriding-header "Orphaned Tasks")
-                        (org-agenda-tags-todo-honor-ignore-options t)
-                        (org-agenda-todo-ignore-scheduled 'future)
-                        (org-agenda-skip-function
-                         '(lambda ()
-                            (or (org-agenda-skip-subtree-if 'todo '("PROJECT" "HOLD" "WAITING" "DELEGATED"))
-                                (org-agenda-skip-subtree-if 'nottododo '("TODO")))))
-                        (org-tags-match-list-sublevels t)
-                        (org-agenda-sorting-strategy
-                         '(category-keep))))
-            (tags-todo "/WAITING"
-                       ((org-agenda-overriding-header "Waiting")
-                        (org-agenda-tags-todo-honor-ignore-options t)
-                        (org-agenda-todo-ignore-scheduled 'future)
-                        (org-agenda-sorting-strategy
-                         '(category-keep))))
-            (tags-todo "/DELEGATED"
-                       ((org-agenda-overriding-header "Delegated")
-                        (org-agenda-tags-todo-honor-ignore-options t)
-                        (org-agenda-todo-ignore-scheduled 'future)
-                        (org-agenda-sorting-strategy
-                         '(category-keep))))
-            (tags-todo "-INBOX"
-                       ((org-agenda-overriding-header "On Hold")
-                        (org-agenda-skip-function
-                         '(lambda ()
-                            (or (org-agenda-skip-subtree-if 'todo '("WAITING"))
-                                (org-agenda-skip-entry-if 'nottodo '("HOLD")))))
-                        (org-tags-match-list-sublevels nil)
-                        (org-agenda-sorting-strategy
-                         '(category-keep))))
-            ;; (tags-todo "-NEXT"
-            ;;            ((org-agenda-overriding-header "All other TODOs")
-            ;;             (org-match-list-sublevels t)))
-            )))))
+;;   (setq org-stuck-projects
+;;         `(,active-project-match ("NEXT")))
+
+;;   (setq org-agenda-compact-blocks t
+;;         org-agenda-sticky t
+;;         org-agenda-start-on-weekday nil
+;;         org-agenda-span 'day
+;;         org-agenda-include-diary nil
+;;         org-agenda-sorting-strategy
+;;         '((agenda habit-down time-up user-defined-up effort-up category-keep)
+;;           (todo category-up effort-up)
+;;           (tags category-up effort-up)
+;;           (search category-up))
+;;         org-agenda-window-setup 'current-window
+;;         org-agenda-custom-commands
+;;         `(("N" "Notes" tags "NOTE"
+;;            ((org-agenda-overriding-header "Notes")
+;;             (org-tags-match-list-sublevels t)))
+;;           ("g" "GTD"
+;;            ((agenda "" nil)
+;;             (tags "INBOX"
+;;                   ((org-agenda-overriding-header "Inbox")
+;;                    (org-tags-match-list-sublevels nil)))
+;;             (stuck ""
+;;                    ((org-agenda-overriding-header "Stuck Projects")
+;;                     (org-agenda-tags-todo-honor-ignore-options t)
+;;                     (org-tags-match-list-sublevels t)
+;;                     (org-agenda-todo-ignore-scheduled 'future)))
+;;             (tags-todo "-INBOX"
+;;                        ((org-agenda-overriding-header "Next Actions")
+;;                         (org-agenda-tags-todo-honor-ignore-options t)
+;;                         (org-agenda-todo-ignore-scheduled 'future)
+;;                         (org-agenda-skip-function
+;;                          '(lambda ()
+;;                             (or (org-agenda-skip-subtree-if 'todo '("HOLD" "WAITING"))
+;;                                 (org-agenda-skip-entry-if 'nottodo '("NEXT")))))
+;;                         (org-tags-match-list-sublevels t)
+;;                         (org-agenda-sorting-strategy
+;;                          '(todo-state-down effort-up category-keep))))
+;;             (tags-todo ,active-project-match
+;;                        ((org-agenda-overriding-header "Projects")
+;;                         (org-tags-match-list-sublevels t)
+;;                         (org-agenda-sorting-strategy
+;;                          '(category-keep))))
+;;             (tags-todo "-INBOX/-NEXT"
+;;                        ((org-agenda-overriding-header "Orphaned Tasks")
+;;                         (org-agenda-tags-todo-honor-ignore-options t)
+;;                         (org-agenda-todo-ignore-scheduled 'future)
+;;                         (org-agenda-skip-function
+;;                          '(lambda ()
+;;                             (or (org-agenda-skip-subtree-if 'todo '("PROJECT" "HOLD" "WAITING" "DELEGATED"))
+;;                                 (org-agenda-skip-subtree-if 'nottododo '("TODO")))))
+;;                         (org-tags-match-list-sublevels t)
+;;                         (org-agenda-sorting-strategy
+;;                          '(category-keep))))
+;;             (tags-todo "/WAITING"
+;;                        ((org-agenda-overriding-header "Waiting")
+;;                         (org-agenda-tags-todo-honor-ignore-options t)
+;;                         (org-agenda-todo-ignore-scheduled 'future)
+;;                         (org-agenda-sorting-strategy
+;;                          '(category-keep))))
+;;             (tags-todo "/DELEGATED"
+;;                        ((org-agenda-overriding-header "Delegated")
+;;                         (org-agenda-tags-todo-honor-ignore-options t)
+;;                         (org-agenda-todo-ignore-scheduled 'future)
+;;                         (org-agenda-sorting-strategy
+;;                          '(category-keep))))
+;;             (tags-todo "-INBOX"
+;;                        ((org-agenda-overriding-header "On Hold")
+;;                         (org-agenda-skip-function
+;;                          '(lambda ()
+;;                             (or (org-agenda-skip-subtree-if 'todo '("WAITING"))
+;;                                 (org-agenda-skip-entry-if 'nottodo '("HOLD")))))
+;;                         (org-tags-match-list-sublevels nil)
+;;                         (org-agenda-sorting-strategy
+;;                          '(category-keep))))
+;;             ;; (tags-todo "-NEXT"
+;;             ;;            ((org-agenda-overriding-header "All other TODOs")
+;;             ;;             (org-match-list-sublevels t)))
+;;             )))))
 
 
 (add-hook 'org-agenda-mode-hook 'hl-line-mode)
@@ -380,7 +441,7 @@ typical word processor."
   (define-key org-mode-map (kbd "C-M-<up>") 'org-up-element)
   (when *is-a-mac*
     (define-key org-mode-map (kbd "M-h") nil)
-    (define-key org-mode-map (kbd "C-c g") 'org-mac-grab-link)))
+    (define-key org-mode-map (kbd "C-c g") 'grab-mac-link)))
 
 (after-load 'org
   (org-babel-do-load-languages
@@ -404,6 +465,12 @@ typical word processor."
      (sqlite . t))))
 
 
+(setq org-default-notes-file "~/Documents/git/gtd/inbox.org")
+(setq org-agenda-files (list "~/Documents/git/gtd/inbox.org"
+			     "~/Documents/git/gtd/just-do-it.org"
+			     "~/Documents/git/gtd/task.org"
+			     "~/Documents/git/gtd/note.org"
+			     ))
 
 
 (defun org-insert-src-block (src-code-type)
@@ -439,6 +506,19 @@ typical word processor."
                             ))
 
 (setq org-src-fontify-natively t)
+(setq org-tag-alist '((:startgroup . nil)
+                      ("@company" . ?c) ("@home" . ?h) ("@anywhere" . ?a)
+                      (:endgroup . nil)
+		      (:startgroup . nil)
+                      ("@project" . ?p) ("@simple" . ?s)
+                      (:endgroup . nil)
+                      (:startgroup . nil)
+                      ("@work" . ?w) ("@person" . ?p) ("@freind" . ?f)
+                      (:endgroup . nil)))
 
-(provide 'init-org)
+;; org-bullets
+(require-package 'org-bullets)
+(add-hook 'org-mode-hook 'org-bullets-mode)
+(setq org-bullets-bullet-list '( "⦿" "○" "✸" "✿" "◆"))
+(provide 'init-org)	   			   
 ;;; init-org.el ends here

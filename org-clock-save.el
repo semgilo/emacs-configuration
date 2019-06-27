@@ -1,2 +1,2 @@
-;; org-clock-save.el - IPV6.local at <2019-06-18 Tue 11:14>
-(setq org-clock-stored-history '(("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 15801) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16845) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16038) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16608) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 17163)))
+;; org-clock-save.el - IPV6.local at <2019-06-22 Sat 00:04>
+(setq org-clock-stored-history '(("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16911) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16104) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 16674) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 17229) ("/Users/lanhuzi-semgilo/Documents/git/gtd/task.org" . 13689)))
